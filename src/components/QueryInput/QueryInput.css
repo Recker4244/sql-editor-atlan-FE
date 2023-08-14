@@ -13,6 +13,9 @@
 {
     border: 1px solid blue;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     height: 80%;
     width: 100%;
 }
