@@ -1,0 +1,15 @@
+.query-table{
+    width: 100%;
+}
+.query-table > thead > tr>  td
+ {
+    font-weight: bold;
+    color: white;
+    background-color: blue;
+}
+.query-table >tr>  td
+ {
+    padding: 1%;
+    border-left: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+}
