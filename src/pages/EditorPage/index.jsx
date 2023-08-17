@@ -5,7 +5,7 @@ import QueryInput from '../../components/QueryInput';
 import MainContext from '../../MainContext';
 import QueryList from '../../components/QueryList';
 import Output from '../../components/Output';
-import { FaCloud, FaMemory } from 'react-icons/fa';
+import { FaCloud, FaHistory } from 'react-icons/fa';
 
 const EditorPage = () => {
 	const [query, setQuery] = useState('SELECT * FROM Contacts;');
@@ -33,7 +33,7 @@ const EditorPage = () => {
 					</div>
 					<div className='history-query-panel'>
 						<div className='heading'>
-							<FaMemory className='icon'/>
+							<FaHistory className='icon'/>
 							<p>Query History</p>
 						</div>
 						<QueryList type='history'/>

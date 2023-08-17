@@ -4,7 +4,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: blue;
+    background-color: var(--primary-color);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-right: 5%;
@@ -15,9 +15,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: solid 1px blue;
-    border-left: solid 1px blue;
-    border-right: solid 1px blue;
+    border-top: solid 1px var(--primary-color);
+    border-left: solid 1px var(--primary-color);
+    border-right: solid 1px var(--primary-color);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     margin-right: 5%;

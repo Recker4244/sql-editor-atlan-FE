@@ -19,7 +19,7 @@
   justify-content: space-between;
   border-color: transparent;
   width: 100%;
-  background-color: blue;
+  background-color: var(--primary-color);
   color: white;
   font-size: large;
   padding: 5px 30px;
@@ -33,10 +33,10 @@
   justify-content: center;
   width: 100%;
   background-color: white;
-  color: blue;
+  color: var(--primary-color);
   font-size: large;
   padding: 5px 30px;
-  border: 3px solid blue;
+  border: 3px solid var(--primary-color);
   border-radius: 5px;
   margin: 10px 0px;
   cursor: pointer;

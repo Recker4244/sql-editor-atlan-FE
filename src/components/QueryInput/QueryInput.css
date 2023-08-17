@@ -15,7 +15,7 @@
 }
 .code-mirror-wrapper
 {
-    border: 1px solid blue;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     display: flex;
     flex-direction: column;

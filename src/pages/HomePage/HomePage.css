@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  background-color: #edefff;
+  background-color: #E8E9FB;
   width: 100%;
   min-height: 100vh;
 }
@@ -10,4 +10,23 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+}
+.features-wrapper{
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.features-wrapper > img
+{
+  height:40%;
+}
+.features{
+  display: flex;
+  flex-direction: column;
+}
+.feature{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }

@@ -6,6 +6,7 @@ import './Output.css';
 import TableSchema from '../TableSchema';
 import TabBar from '../TabBar';
 import { FaDownload} from 'react-icons/fa';
+import Visualisation from '../Visualisation';
 
 const Output = () => {
 	const { queryHistory } = useContext(MainContext);
@@ -21,6 +22,9 @@ const Output = () => {
 			</Table>);
 		case 1:
 			return (<TableSchema data={queryHistory.outputData}></TableSchema>);
+
+		case 2:
+			return <Visualisation data={queryHistory.outputData}/>;
 		
 		default:
 			break;
@@ -45,16 +49,18 @@ const Output = () => {
             (0.03sec)
 							</span>
 						</p>:null}
-						<div className='export-button-wrapper'>
-							<CSVLink className='export-button'
-								data={queryHistory.outputData}
-								filename={'dataOutput.csv'}
-							>
-								<button onClick={exportData}>
+						{tab==0||tab==1?
+							<div className='export-button-wrapper'>
+								<CSVLink className='export-button'
+									data={queryHistory.outputData}
+									filename={'dataOutput.csv'}
+								>
+									<button onClick={exportData}>
                   Export <FaDownload/>
-								</button>
-							</CSVLink>
-						</div>
+									</button>
+								</CSVLink>
+							</div>:null}
+						
 					</div>
 					
 					{getTab()}
