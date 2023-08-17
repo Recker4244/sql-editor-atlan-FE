@@ -2,6 +2,7 @@ import React,{ useContext } from 'react';
 import MainContext from '../../MainContext';
 import { contacts } from '../../assets/data/contacts';
 import { persons } from '../../assets/data/person';
+import { FaPlay ,FaSave,FaTimesCircle} from 'react-icons/fa';
 import './Panel.css';
 
 
@@ -56,17 +57,19 @@ const EditorPanel = () => {
 		<div className='editor-panel'>
 			<div className='run-button'>
 				<button onClick={() => runQuery()}>
-					<span className='fa fa-play me-1'></span>Run
+					<FaPlay/>
+				Run
 				</button>
 			</div>
 			<div className='save-button'>
 				<button onClick={() => saveQuery()}>
-					<span className='fa fa-save me-1'></span>Save
+					<FaSave/>Save
 				</button>
 			</div>
 			<div className='clear-button'>
 				<button onClick={() => clearQuery()}>
-					<span className='fa fa-times me-1'></span>Clear
+					<FaTimesCircle/>
+				Clear
 				</button>
 			</div>
 		</div>

@@ -1,5 +1,4 @@
 .editor-panel{
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -13,38 +12,56 @@
 .clear-button{
   margin-right: 10%;
 }
+
 .run-button> button{
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  border-color: transparent;
   width: 100%;
   background-color: blue;
   color: white;
-  font-size: 20px;
-  padding: 10px 60px;
+  font-size: large;
+  padding: 5px 30px;
   border-radius: 5px;
   margin: 10px 0px;
   cursor: pointer;
 }
 .save-button> button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
   background-color: white;
   color: blue;
-  font-size: 20px;
-  padding: 10px 60px;
+  font-size: large;
+  padding: 5px 30px;
   border: 3px solid blue;
   border-radius: 5px;
   margin: 10px 0px;
   cursor: pointer;
 }
 .clear-button> button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   width: 100%;
   background-color: white;
-  color: blue;
-  font-size: 20px;
-  padding: 10px 60px;
-  border: 3px solid blue;
+  color: red;
+  font-size: large;
+  padding: 5px 30px;
+  border: 3px solid red;
   border-radius: 5px;
   margin: 10px 0px;
   cursor: pointer;
+}
+
+.run-button> button > svg{
+  margin-right: 5px;
+}
+.save-button> button > svg{
+  margin-right: 5px;
+}
+.clear-button> button > svg{
+  margin-right: 5px;
 }

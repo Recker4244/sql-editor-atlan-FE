@@ -5,6 +5,7 @@ import { CSVLink } from 'react-csv';
 import './Output.css';
 import TableSchema from '../TableSchema';
 import TabBar from '../TabBar';
+import { FaDownload} from 'react-icons/fa';
 
 const Output = () => {
 	const { queryHistory } = useContext(MainContext);
@@ -13,13 +14,27 @@ const Output = () => {
 		console.log('Exporting Data');
 	};
 
+	const getTab=()=>{
+		switch (tab) {
+		case 0:
+			return (<Table result={queryHistory.outputData}>
+			</Table>);
+		case 1:
+			return (<TableSchema data={queryHistory.outputData}></TableSchema>);
+		
+		default:
+			break;
+		}
+	};
+
 	return (
 		<div className='query-results'>
 			{queryHistory.outputData.length > 0 ? (
 				<>
-					<TabBar tab={tab} tabs={ ['Output','Table Structure']} onChangeFunc={setTab}></TabBar>
+					<TabBar tab={tab} tabs={ ['Output','Table Structure','Visualisation']} onChangeFunc={setTab}></TabBar>
 					<div className='query-details'>
-						<p>
+						
+						{tab==0||tab==1?<p>
 
 							<span>
 								{tab==0?queryHistory.outputData.length:Object.keys(queryHistory.outputData[0]).length}							
@@ -29,23 +44,20 @@ const Output = () => {
 								{' '}
             (0.03sec)
 							</span>
-						</p>
-						<div className='export-button'>
-							<CSVLink
+						</p>:null}
+						<div className='export-button-wrapper'>
+							<CSVLink className='export-button'
 								data={queryHistory.outputData}
 								filename={'dataOutput.csv'}
 							>
 								<button onClick={exportData}>
-                  Export <span className='fa fa-download'></span>
+                  Export <FaDownload/>
 								</button>
 							</CSVLink>
 						</div>
 					</div>
 					
-					{tab==0? 
-						(<Table result={queryHistory.outputData}>
-						</Table>)
-						:(<TableSchema data={queryHistory.outputData}></TableSchema>)}
+					{getTab()}
 					
 				</>
 			) : (
