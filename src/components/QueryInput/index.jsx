@@ -29,8 +29,7 @@ const QueryInput=()=> {
 				}}
 				aria-label='code-editor'
 			/>
-			<p className='note'
-				style={{ fontSize: '0.8rem' }} >
+			<p className='note'>
 				<strong>NOTE: </strong>Click on a Previously Saved Query to Begin.
 			</p>
 			<EditorPanel/>
