@@ -2,15 +2,17 @@ import React from 'react';
 import './HomePage.css';
 import dataImage from '../../assets/images/data-analysis.svg';
 import {FaBolt,FaArrowRight} from 'react-icons/fa';
+import NavBar from '../../components/NavBar';
 
 
 const HomePage = () => {
 	return (
 		<div className="home-page">
+			<NavBar/>
 			<div className="content">
 				<h1>Meet <span style={{color:'#2125d2'}}>SQLizer</span></h1>
 				
-				<p>
+				<p className='description'>
 			SQLizer is a powerful SQL editor tailored for data analysts and professionals
 			who work with databases. Whether you&apos;re extracting insights, performing complex
 			queries, or visualizing your data, SQLizer provides a comprehensive set of
@@ -39,7 +41,6 @@ const HomePage = () => {
 					</div>
 					
 				</div>
-				
 				<div className='try-button-wrapper'>
 					<button className='try-button'><p>Try It</p><FaArrowRight/></button>
 				</div>

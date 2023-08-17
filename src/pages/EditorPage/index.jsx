@@ -6,6 +6,7 @@ import MainContext from '../../MainContext';
 import QueryList from '../../components/QueryList';
 import Output from '../../components/Output';
 import { FaCloud, FaHistory } from 'react-icons/fa';
+import NavBar from '../../components/NavBar';
 
 const EditorPage = () => {
 	const [query, setQuery] = useState('SELECT * FROM Contacts;');
@@ -20,30 +21,34 @@ const EditorPage = () => {
 	);
 
 	return (
-		<div className="editor-page">
+		<div className="editor-page-wrapper">
+			<NavBar/>
 			<MainContext.Provider value={contextValue}>
-				<div className='side-panel'>
+				<div className='editor-page'>
+					<div className='side-panel'>
 					
-					<div className='saved-query-panel'>
-						<div className='heading'>
-							<FaCloud className='icon'/>
-							<p>Saved Queries</p>
+						<div className='saved-query-panel'>
+							<div className='heading'>
+								<FaCloud className='icon'/>
+								<p>Saved Queries</p>
+							</div>
+							<QueryList type='saved'/>
 						</div>
-						<QueryList type='saved'/>
+						<div className='history-query-panel'>
+							<div className='heading'>
+								<FaHistory className='icon'/>
+								<p>Query History</p>
+							</div>
+							<QueryList type='history'/>
+						</div>
 					</div>
-					<div className='history-query-panel'>
-						<div className='heading'>
-							<FaHistory className='icon'/>
-							<p>Query History</p>
-						</div>
-						<QueryList type='history'/>
+				
+					<div className='editor-components'>
+						<QueryInput />
+						<Output />
 					</div>
 				</div>
 				
-				<div className='editor-components'>
-					<QueryInput />
-					<Output />
-				</div>
 				
 			</MainContext.Provider>
 		</div>
