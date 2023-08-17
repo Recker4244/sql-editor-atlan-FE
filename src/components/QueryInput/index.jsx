@@ -14,6 +14,10 @@ const QueryInput=()=> {
 				name='Editor'
 				onBeforeChange={(editor, data, value) => setQuery(value)}
 				className='code-mirror-wrapper'
+				height='100%'
+				width='100%'
+				align='left'
+				autoCapitalize='on'
 				options={{
 					lint: true,
 					mode: 'sql',
@@ -29,8 +33,9 @@ const QueryInput=()=> {
 				style={{ fontSize: '0.8rem' }} >
 				<strong>NOTE: </strong>Click on a Previously Saved Query to Begin.
 			</p>
+			<EditorPanel/>
 		</div>
-		<EditorPanel/>
+		
 	</div>);
 	
 };

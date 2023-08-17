@@ -1,14 +1,24 @@
 .editor-panel{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.run-button{
+  margin-right: 10%;
+}
+.save-button{
+  margin-right: 10%;
+}
+.clear-button{
+  margin-right: 10%;
 }
 .run-button> button{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: blue;
   color: white;
   font-size: 20px;
   padding: 10px 60px;
@@ -17,8 +27,8 @@
   cursor: pointer;
 }
 .save-button> button{
-    width: 100%;
-    background-color: white;
+  width: 100%;
+  background-color: white;
   color: blue;
   font-size: 20px;
   padding: 10px 60px;
@@ -28,8 +38,8 @@
   cursor: pointer;
 }
 .clear-button> button{
-    width: 100%;
-    background-color: white;
+  width: 100%;
+  background-color: white;
   color: blue;
   font-size: 20px;
   padding: 10px 60px;

@@ -1,6 +1,7 @@
 .query-results{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-left: 5%;
     margin-right: 5%;
     height: 50%;
@@ -17,6 +18,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.placeholder-text > p {
+    font-size: 3rem;
+    color: grey;
 }
 .query-details{
     display: flex;
