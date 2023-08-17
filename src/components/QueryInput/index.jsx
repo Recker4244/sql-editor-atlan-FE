@@ -25,7 +25,8 @@ const QueryInput=()=> {
 				}}
 				aria-label='code-editor'
 			/>
-			<p style={{ fontSize: '0.8rem' }} >
+			<p className='note'
+				style={{ fontSize: '0.8rem' }} >
 				<strong>NOTE: </strong>Click on a Previously Saved Query to Begin.
 			</p>
 		</div>

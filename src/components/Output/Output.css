@@ -1,8 +1,34 @@
 .query-results{
-    height: 100%;
-    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 50%;
+    width: 90%;
+    
 }
 .query-input > input{
     height: 200px;
     width: 400px;
+}
+.placeholder-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.query-details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.export-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    cursor: pointer;
 }

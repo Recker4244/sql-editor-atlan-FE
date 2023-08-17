@@ -3,15 +3,6 @@ import React from 'react';
 
 const getTableRowsFromData = (arr) => {
 	const keys = Object.keys(arr[0]);
-	console.log(arr.map((i,index) => {
-		return (
-			<tr key={index}>
-				{keys.map((a,i) => {
-					return <td key={i}>{i[a]}</td>;
-				})}
-			</tr>
-		);
-	}));
 	return arr.map((i,index) => {
 		return (
 			<tr key={index}>

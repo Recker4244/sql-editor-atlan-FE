@@ -1,14 +1,21 @@
+
 .query-table{
     width: 100%;
 }
+.query-table-wrapper
+{
+    overflow-y: auto;
+}
 .query-table > thead > tr>  td
  {
+    padding: 1%;
     font-weight: bold;
     color: white;
     background-color: blue;
 }
 .query-table >tr>  td
  {
+    text-overflow: ellipsis;
     padding: 1%;
     border-left: solid 1px #ccc;
     border-bottom: solid 1px #ccc;

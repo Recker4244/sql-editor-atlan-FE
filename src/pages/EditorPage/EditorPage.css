@@ -4,19 +4,23 @@
     height: 100%;
 }
 .side-panel{
-    width: 30%;
+    background-color: #f2f2f2;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+width: 30%;
 height: 100%;
 }
 .saved-query-panel{
-    overflow-y: scroll;
+    overflow-y: auto;
     height: 30%;
     width: 100%;
-    margin-top: 10%;
     margin-bottom: 10%;
     
 }
 .history-query-panel{
-    overflow-y: scroll;
+
+    overflow-y: auto;
     height: 30%;
     width: 100%;
     margin-top: 10%;
@@ -24,6 +28,7 @@ height: 100%;
     
 }
 .editor-components{
+    height: 100%;
     width: 70%;
     display: flex;
     flex-direction: column;

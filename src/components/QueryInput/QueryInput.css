@@ -1,13 +1,18 @@
 .editor{
-    width: 100%;
+    height: 50%;
+    width: 90%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .query-input{
     display: flex;
     flex-direction: column;
-    height: 500px;
-    width: 90%;
+    align-items: flex-start;
+    width: 70%;
+    margin-right: 5%;
 }
 .code-mirror-wrapper
 {

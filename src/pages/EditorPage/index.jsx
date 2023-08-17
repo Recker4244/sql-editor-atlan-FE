@@ -22,10 +22,17 @@ const EditorPage = () => {
 		<div className="editor-page">
 			<MainContext.Provider value={contextValue}>
 				<div className='side-panel'>
+					
 					<div className='saved-query-panel'>
+						<div>
+							<h1>Saved Queries</h1>
+						</div>
 						<QueryList type='saved'/>
 					</div>
 					<div className='history-query-panel'>
+						<div>
+							<h1>Query History</h1>
+						</div>
 						<QueryList type='history'/>
 					</div>
 				</div>
