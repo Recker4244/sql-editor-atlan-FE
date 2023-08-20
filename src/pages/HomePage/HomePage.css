@@ -125,11 +125,11 @@
     flex-direction: row;
     justify-content: space-around;
   }
-  .features-wrapper > img
+  /* .features-wrapper > img
   {
     width: 600px;
     height: 400px;
-  }
+  } */
   .features{
     display: flex;
     flex-direction: column;
