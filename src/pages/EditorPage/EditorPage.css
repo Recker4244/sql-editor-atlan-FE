@@ -6,12 +6,11 @@
 }
 .editor-page{
     width: 100%;
-    height: 93%;
+    height: 95%;
     display: flex;
     flex-direction: row;
 }
 .side-panel{
-    background-color: #f2f2f2;
 display: flex;
 flex-direction: column;
 justify-content: flex-start;
@@ -48,6 +47,7 @@ height: 100%;
     
 }
 .editor-components{
+    border-left: solid 1px #f2f2f2;
     height: 100%;
     width: 70%;
     display: flex;

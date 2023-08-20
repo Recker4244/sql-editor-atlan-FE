@@ -1,6 +1,15 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 
+const columnDescription={
+	'id':'ID of the Contact',
+	'first_name':'First Name of the Contact',
+	'last_name':'Last Name of the Contact',
+	'gender':'Gender of the Contact',
+	'email':'Email of the Contact',
+	'ip_address':'IP address of the Contact',
+};
+
 const getTableRowsFromData = (arr) => {
 	const keys = Object.keys(arr[0]);
 	return arr.map((i,index) => {
@@ -35,6 +44,17 @@ const getTableColumns = (arr) => {
 		);
 	});
 };
+const getTableColumnsWithDescription = (arr) => {
+	const keys = Object.keys(arr[0]);
+	return keys.map((i) => {
+		return (
+			<tr key={i}>
+				<td >{i}</td>
+				<td>{columnDescription[i]}</td>
+			</tr>
+		);
+	});
+};
   
-export { getTableRowsFromData, getTableHeadFromData, getTableColumns };
+export { getTableRowsFromData, getTableHeadFromData, getTableColumns ,getTableColumnsWithDescription};
   

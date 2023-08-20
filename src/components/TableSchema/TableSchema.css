@@ -1,13 +1,21 @@
+.table-schema > table > thead > tr>  td
+ {
+    padding: 2%;
+    width: 10%;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary-color);
+}
 .table-schema > table  > tr > td {
     padding: 2%;
     border-left: solid 1px #ccc;
     border-bottom: solid 1px #ccc;
     border-right: solid 1px #ccc;
 }
-.table-schema > table > tr:first-child > td {
+/* .table-schema > table > tr:first-child > td {
     padding: 2%;
     border-top : solid 1px #ccc;
     border-left: solid 1px #ccc;
     border-bottom: solid 1px #ccc;
     border-right: solid 1px #ccc;
-}
+} */

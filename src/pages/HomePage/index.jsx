@@ -10,7 +10,7 @@ const HomePage = () => {
 		<div className="home-page">
 			<NavBar/>
 			<div className="content">
-				<h1>Meet <span style={{color:'#2125d2'}}>SQLizer</span></h1>
+				<h1 style={{fontSize:'3rem'}}>Meet  <span style={{color:'#2125d2'}}>SQLizer</span></h1>
 				
 				<p className='description'>
 			SQLizer is a powerful SQL editor tailored for data analysts and professionals
