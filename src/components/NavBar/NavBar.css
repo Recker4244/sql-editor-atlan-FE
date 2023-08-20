@@ -21,6 +21,10 @@
         width: 100px;
         height: 50px;
     }
+    span:hover{
+        color: var(--primary-color);
+        text-decoration: underline !important;
+    }
 }
 @media (min-width: 768px) {
     .nav-bar{
@@ -57,6 +61,17 @@
         text-decoration: none;
         color: black;
         font-size: large;
+        cursor: pointer;
+    }
+    .link a {
+        text-decoration: none;
+        color: #333; /* Default text color */
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s, background-color 0.3s; /* Add a smooth transition effect */
+    }
+    .link >a:hover {
+        color: var(--primary-color);
     }
     .nav-link > :active{
         color: var(--primary-color);

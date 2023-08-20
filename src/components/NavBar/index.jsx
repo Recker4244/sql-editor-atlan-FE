@@ -10,11 +10,16 @@ const NavBar = () => {
 			<div className='link'>
 				<a href='/' className="nav-link">
               Home
+					<span style={{
+						color: 'red',
+						cursor: 'pointer'
+					}}></span>
 				</a>
 			</div>
 			<div className='link'>
 				<a href='/editor' className="nav-link">
               Editor
+					<span></span>
 				</a>
 			</div>
 			<div className='link'>
