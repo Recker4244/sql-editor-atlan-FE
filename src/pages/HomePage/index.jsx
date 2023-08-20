@@ -1,15 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './HomePage.css';
+import productImage from '../../assets/images/product.png';
 import dataImage from '../../assets/images/data-analysis.svg';
 import {FaBolt,FaArrowRight} from 'react-icons/fa';
 import NavBar from '../../components/NavBar';
 
 
+
 const HomePage = () => {
+	const navigate = useNavigate();
 	return (
 		<div className="home-page">
 			<NavBar/>
 			<div className="content">
+				<img src={productImage} alt="data" width={1200} height={700}/>
 				<h1 style={{fontSize:'3rem'}}>Meet  <span style={{color:'#2125d2'}}>SQLizer</span></h1>
 				
 				<p className='description'>
@@ -42,7 +47,7 @@ const HomePage = () => {
 					
 				</div>
 				<div className='try-button-wrapper'>
-					<button className='try-button'><p>Try It</p><FaArrowRight/></button>
+					<button className='try-button' onClick={()=>{navigate('/editor');}}><p>Try It</p><FaArrowRight/></button>
 				</div>
 			</div>
 		</div>
