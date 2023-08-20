@@ -1,55 +1,110 @@
-
-.editor-page-wrapper{
+@media (max-width: 768px) {
+    .editor-page-wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .editor-page{
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .side-panel{
     display: flex;
     flex-direction: column;
-    height: 100%;
-}
-.editor-page{
-    width: 100%;
-    height: 95%;
-    display: flex;
-    flex-direction: row;
-}
-.side-panel{
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-width: 30%;
-height: 100%;
-}
-.saved-query-panel{
-    overflow-y: auto;
-    height: 30%;
-    width: 100%;
-    margin-bottom: 10%;  
-}
-.heading
-{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: flex-start;
-    margin-left: 10%;
-    margin-right: 10%;
-    font-size: x-large;
-}
-.heading > svg
-{
-    margin-right: 5px;    
-}
-.history-query-panel{
-
-    overflow-y: auto;
-    height: 30%;
     width: 100%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    
-}
-.editor-components{
-    border-left: solid 1px #f2f2f2;
     height: 100%;
-    width: 70%;
+    }
+    .saved-query-panel{
+        height: 30%;
+        width: 100%;
+        margin-bottom: 10%;  
+    }
+    .heading
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: x-large;
+    }
+    .heading > svg
+    {
+        margin-right: 5px;    
+    }
+    .history-query-panel{
+        height: 30%;
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        
+    }
+    .editor-components{
+        border-top: solid 1px #f2f2f2;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width:768px){
+    .editor-page-wrapper{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .editor-page{
+        width: 100%;
+        height: 95%;
+        display: flex;
+        flex-direction: row;
+    }
+    .side-panel{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    width: 30%;
+    height: 100%;
+    }
+    .saved-query-panel{
+        overflow-y: auto;
+        height: 30%;
+        width: 100%;
+        margin-bottom: 10%;  
+    }
+    .heading
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: x-large;
+    }
+    .heading > svg
+    {
+        margin-right: 5px;    
+    }
+    .history-query-panel{
+    
+        overflow-y: auto;
+        height: 30%;
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        
+    }
+    .editor-components{
+        border-left: solid 1px #f2f2f2;
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
 }

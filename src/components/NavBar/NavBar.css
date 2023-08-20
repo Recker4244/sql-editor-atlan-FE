@@ -1,42 +1,68 @@
-.nav-bar{
-    position: sticky;
-    height: 5%;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 5%;
-    padding-right: 5%;
-    align-items: center;
-    background-color: white;
-    border-bottom: solid 1px #f2f2f2;
+@media (max-width: 768px) {
+    .nav-bar{
+        height: 10vh;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 5%;
+        padding-right: 5%;
+        align-items: center;
+        background-color: white;
+        border-bottom: solid 1px #f2f2f2;
+    }
+    .links{
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 100%;
+    }
+    .nav-bar >img{
+        width: 100px;
+        height: 50px;
+    }
 }
-.links{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-}
-.link {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 10%;
-    text-decoration: none;
-}
-.nav-bar > link:nth-last-child(1){
-    margin-right: 0%;
-}
-.nav-link{
-    text-decoration: none;
-    color: black;
-    font-size: large;
-}
-.nav-link > :active{
-    color: var(--primary-color);
-}
-.nav-bar >img{
-    width: 100px;
-    height: 50px;
+@media (min-width: 768px) {
+    .nav-bar{
+        position: sticky;
+        height: 5%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-left: 5%;
+        padding-right: 5%;
+        align-items: center;
+        background-color: white;
+        border-bottom: solid 1px #f2f2f2;
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .link {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        text-decoration: none;
+    }
+    .nav-bar > link:nth-last-child(1){
+        margin-right: 0%;
+    }
+    .nav-link{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+    }
+    .nav-link > :active{
+        color: var(--primary-color);
+    }
+    .nav-bar >img{
+        width: 100px;
+        height: 50px;
+    }
 }

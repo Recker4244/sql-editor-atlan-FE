@@ -1,50 +1,107 @@
-.query-results{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 50%;
-    width: 90%;
-    
+@media(max-width:768px)
+{
+    .query-results{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 50%;
+        width: 90%; 
+    }
+    .query-input > input{
+        height: 200px;
+        width: 400px;
+    }
+    .placeholder-text{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .placeholder-text > p {
+        font-size: 1rem;
+        color: grey;
+    }
+    .query-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .export-button-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .export-button > button{
+        text-decoration: none;
+        height: 30px;
+        width: 100px;
+        background-color: white;
+        border: solid 2px var(--primary-color);
+        border-radius: 5px;
+    }
+    .export-button > button > p {
+        color: var(--primary-color);
+        font-size: 1rem;
+    }
 }
-.query-input > input{
-    height: 200px;
-    width: 400px;
-}
-.placeholder-text{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.placeholder-text > p {
-    font-size: 3rem;
-    color: grey;
-}
-.query-details{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.export-button-wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-.export-button > button{
-    text-decoration: none;
-    height: 30px;
-    width: 100px;
-    background-color: white;
-    border: solid 2px var(--primary-color);
-    border-radius: 5px;
-}
-.export-button > button > p {
-    color: var(--primary-color);
-    font-size: 1rem;
+
+
+@media (min-width:768px)
+{
+    .query-results{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 50%;
+        width: 90%;
+        
+    }
+    .query-input > input{
+        height: 200px;
+        width: 400px;
+    }
+    .placeholder-text{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .placeholder-text > p {
+        font-size: 3rem;
+        color: grey;
+    }
+    .query-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .export-button-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .export-button > button{
+        text-decoration: none;
+        height: 30px;
+        width: 100px;
+        background-color: white;
+        border: solid 2px var(--primary-color);
+        border-radius: 5px;
+    }
+    .export-button > button > p {
+        color: var(--primary-color);
+        font-size: 1rem;
+    }
 }

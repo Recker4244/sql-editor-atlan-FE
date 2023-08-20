@@ -1,28 +1,62 @@
-.editor{
-    height: 50%;
-    padding-top: 1%;
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-}
-.query-input{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-}
-.code-mirror-wrapper
+@media (max-width:768px)
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    height: 80%;
-    width: 100%;
+    .editor{
+        height: 50%;
+        padding-top: 1%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .query-input{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .code-mirror-wrapper
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 300px;
+        width: 100%;
+    }
+    .note{
+        font-size: small;
+    } 
 }
-.note{
-    font-size: larger;
+@media (min-width:768px)
+{
+    .editor{
+        height: 50%;
+        padding-top: 1%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .query-input{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .code-mirror-wrapper
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        height: 80%;
+        width: 100%;
+    }
+    .note{
+        font-size: larger;
+    }
 }

@@ -1,67 +1,141 @@
-.editor-panel{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.run-button{
-  margin-right: 10%;
-}
-.save-button{
-  margin-right: 10%;
-}
-.clear-button{
-  margin-right: 10%;
+@media(max-width:768px)
+{
+  .editor-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .run-button{
+    margin-right: 5%;
+  }
+  .save-button{
+    margin-right: 5%;
+  }
+  .clear-button{
+    margin-right: 5%;
+  }
+  
+  .run-button> button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-color: transparent;
+    width: 100px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: large;
+    padding: 5px 30px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+  }
+  .save-button> button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100px;
+    background-color: white;
+    color: var(--primary-color);
+    font-size: large;
+    padding: 5px 30px;
+    border: 3px solid var(--primary-color);
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+  }
+  .clear-button> button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100px;
+    background-color: white;
+    color: red;
+    font-size: large;
+    padding: 5px 30px;
+    border: 3px solid red;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+  }
+  
+  .run-button> button > svg{
+    margin-right: 5px;
+  }
+  .save-button> button > svg{
+    margin-right: 5px;
+  }
+  .clear-button> button > svg{
+    margin-right: 5px;
+  }
 }
 
-.run-button> button{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  border-color: transparent;
-  width: 100%;
-  background-color: var(--primary-color);
-  color: white;
-  font-size: large;
-  padding: 5px 30px;
-  border-radius: 5px;
-  margin: 10px 0px;
-  cursor: pointer;
-}
-.save-button> button{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  background-color: white;
-  color: var(--primary-color);
-  font-size: large;
-  padding: 5px 30px;
-  border: 3px solid var(--primary-color);
-  border-radius: 5px;
-  margin: 10px 0px;
-  cursor: pointer;
-}
-.clear-button> button{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
-  background-color: white;
-  color: red;
-  font-size: large;
-  padding: 5px 30px;
-  border: 3px solid red;
-  border-radius: 5px;
-  margin: 10px 0px;
-  cursor: pointer;
-}
-
-.run-button> button > svg{
-  margin-right: 5px;
-}
-.save-button> button > svg{
-  margin-right: 5px;
-}
-.clear-button> button > svg{
-  margin-right: 5px;
+@media(min-width:768px)
+{
+  .editor-panel{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .run-button{
+    margin-right: 10%;
+  }
+  .save-button{
+    margin-right: 10%;
+  }
+  .clear-button{
+    margin-right: 10%;
+  }
+  
+  .run-button> button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-color: transparent;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: large;
+    padding: 5px 30px;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+  }
+  .save-button> button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    color: var(--primary-color);
+    font-size: large;
+    padding: 5px 30px;
+    border: 3px solid var(--primary-color);
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+  }
+  .clear-button> button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    color: red;
+    font-size: large;
+    padding: 5px 30px;
+    border: 3px solid red;
+    border-radius: 5px;
+    margin: 10px 0px;
+    cursor: pointer;
+  }
+  
+  .run-button> button > svg{
+    margin-right: 5px;
+  }
+  .save-button> button > svg{
+    margin-right: 5px;
+  }
+  .clear-button> button > svg{
+    margin-right: 5px;
+  }
 }
