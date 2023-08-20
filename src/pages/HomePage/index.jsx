@@ -14,8 +14,8 @@ const HomePage = () => {
 		<div className="home-page">
 			<NavBar/>
 			<div className="content">
-				<img src={productImage} alt="data" width={1200} height={700}/>
-				<h1 style={{fontSize:'3rem'}}>Meet  <span style={{color:'#2125d2'}}>SQLizer</span></h1>
+				<img src={productImage} alt="data" className='product-image' width={1200} height={700}/>
+				<h1>Meet  <span style={{color:'#2125d2'}}>SQLizer</span></h1>
 				
 				<p className='description'>
 			SQLizer is a powerful SQL editor tailored for data analysts and professionals
