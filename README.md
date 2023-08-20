@@ -11,6 +11,8 @@ SQLizer is a powerful SQL editor tailored for data analysts and professionals wh
 - **SQL Query Editor**: Users can write and edit SQL queries in a user-friendly code editor.
 - **Query Execution**: Execute SQL queries against a connected database and view results.
 - **Syntax Highlighting**: The editor provides syntax highlighting for SQL code.
+- **Auto Completion**: The editor has support for autocompletion for convenience
+- **Visualisation**: View visualisation of data in different forms like Pie Charts and Graphs.
 - **Performance**: The editor aims to load quickly to provide a smooth user experience.
 
 ### Technologies Used
