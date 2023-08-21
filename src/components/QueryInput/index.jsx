@@ -13,7 +13,7 @@ const QueryInput=()=> {
 			<CodeMirror
 				value={query}
 				name='Editor'
-				onBeforeChange={(editor, data, value) => setQuery(value)}
+				onChange={(value) => setQuery(value)}
 				className='code-mirror-wrapper'
 				height='100%'
 				width='100%'
