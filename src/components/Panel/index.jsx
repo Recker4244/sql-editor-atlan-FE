@@ -1,7 +1,7 @@
 import React,{ useContext } from 'react';
 import MainContext from '../../MainContext';
 import { contacts } from '../../assets/data/contacts';
-import { persons } from '../../assets/data/person';
+import { friends } from '../../assets/data/friends';
 import { FaPlay ,FaSave,FaTimesCircle} from 'react-icons/fa';
 import './Panel.css';
 
@@ -22,14 +22,15 @@ const EditorPanel = () => {
 				outputData: contacts,
 			}));
 		} 
-		else if (query === 'SELECT id, first_name, last_name FROM Contacts;') {
+		else if (query === 'SELECT id, first_name, last_name FROM Friends;') {
 			setQueryHistory((prev) => ({
 				...prev,
-				outputData: persons,
+				outputData: friends,
 			}));
 		} 
 		else {
-			alert('Please try the test query.');
+			alert('Please try one of the saved queries');
+			return;
 		}
 		setQueryHistory((prev) => ({
 			...prev,
@@ -39,7 +40,7 @@ const EditorPanel = () => {
 
 	const saveQuery = () => {
 		if (query.trim() === '') {
-			alert('Query can\'t be null');
+			alert('Please enter a query to be saved');
 			return;
 		}
 

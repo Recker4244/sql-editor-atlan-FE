@@ -41,12 +41,11 @@ const QueryInput=()=> {
 									]
 								},
 								{
-									name: 'Orders',
+									name: 'Friends',
 									columns: [
 										{ name: 'id', type: 'number' },
-										{ name: 'contact_id', type: 'number' },
-										{ name: 'order_date', type: 'date' },
-										{ name: 'amount', type: 'number' },
+										{ name: 'first_name', type: 'string' },
+										{ name: 'last_name', type: 'string' }
 									]
 								},
 							]
