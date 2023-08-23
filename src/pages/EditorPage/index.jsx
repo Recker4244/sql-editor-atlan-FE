@@ -11,8 +11,8 @@ import NavBar from '../../components/NavBar';
 const EditorPage = () => {
 	const [query, setQuery] = useState('SELECT * FROM Contacts;');
 	const [queryHistory, setQueryHistory] = useState({
-		saved: ['SELECT * FROM Contacts;', 'SELECT id, first_name, last_name FROM Contacts;'],
-		history: ['SELECT * FROM Contacts;'],
+		saved: ['SELECT * FROM Contacts;', 'SELECT id, first_name, last_name FROM Friends;'],
+		history: [],
 		outputData: [],
 	});
 	const contextValue = useMemo(

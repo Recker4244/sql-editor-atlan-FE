@@ -28,6 +28,18 @@ const QueryList = (props) => {
 		); // eslint-disable-next-line
   }, [searchQuery]);
 
+	const queryResult=()=>{
+		if(queryHistory[props.type].length==0)
+			return (<div>
+			</div>);
+		if(list.length===0){
+			return (<div><p>
+				No queries found</p>
+			</div>);
+		}
+		return (<div className='query-list'>{renderQueryList(list)}</div>);
+	};
+
 	return (
 		<div className='query-wrapper'>
 			<div className='search-bar'>
@@ -37,14 +49,7 @@ const QueryList = (props) => {
 					onChange={(e) => setSearchQuery(e.target.value)}
 				/>
 			</div>
-			{list.length > 0 ? (
-				<div className='query-list'>{renderQueryList(list)}</div>
-			) : (
-				<div className='placeholder-text'>
-					<span className='fa fa-exclamation-circle'></span>
-					<p>No queries found.</p>
-				</div>
-			)}
+			{queryResult()}
 		</div>
 	);
 };
