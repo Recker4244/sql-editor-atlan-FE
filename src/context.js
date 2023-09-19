@@ -3,7 +3,7 @@ import React, { createContext, useState } from 'react';
 const GlobalContext = createContext();
 
 const ContextProvider = ({ children }) => {
-	const [query, setQuery] = useState('SELECT * FROM Contacts');
+	const [query, setQuery] = useState('SELECT * FROM Customers');
 
 	return (
 		<GlobalContext.Provider

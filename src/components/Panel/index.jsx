@@ -1,33 +1,34 @@
-import React,{ useContext } from 'react';
+import React, { useContext } from 'react';
 import MainContext from '../../MainContext';
-import { contacts } from '../../assets/data/contacts';
-import { friends } from '../../assets/data/friends';
-import { FaPlay ,FaSave,FaTimesCircle} from 'react-icons/fa';
+import { FaPlay, FaSave, FaTimesCircle } from 'react-icons/fa';
 import './Panel.css';
+import { fetchData } from '../../utils/common';
 
 
 const EditorPanel = () => {
 	const { query, setQueryHistory, setQuery } = useContext(MainContext);
 
-	const runQuery = () => {
+	const runQuery = async () => {
 		if (query.trim() === '') {
 			alert(
 				'Please type another query, or select from the ones previously saved.'
 			);
 			return;
 		}
-		if (query === 'SELECT * FROM Contacts;') {
+		if (query === 'SELECT * FROM Customers;') {
+			const data = await fetchData('customers');
 			setQueryHistory((prev) => ({
 				...prev,
-				outputData: contacts,
+				outputData: data,
 			}));
-		} 
-		else if (query === 'SELECT id, first_name, last_name FROM Friends;') {
+		}
+		else if (query === 'SELECT * FROM Order_Details;') {
+			const data = await fetchData('order_details');
 			setQueryHistory((prev) => ({
 				...prev,
-				outputData: friends,
+				outputData: data,
 			}));
-		} 
+		}
 		else {
 			alert('Please try one of the saved queries');
 			return;
@@ -58,19 +59,19 @@ const EditorPanel = () => {
 		<div className='editor-panel'>
 			<div className='run-button'>
 				<button onClick={() => runQuery()}>
-					<FaPlay/>
-				Run
+					<FaPlay />
+					Run
 				</button>
 			</div>
 			<div className='save-button'>
 				<button onClick={() => saveQuery()}>
-					<FaSave/>Save
+					<FaSave />Save
 				</button>
 			</div>
 			<div className='clear-button'>
 				<button onClick={() => clearQuery()}>
-					<FaTimesCircle/>
-				Clear
+					<FaTimesCircle />
+					Clear
 				</button>
 			</div>
 		</div>
