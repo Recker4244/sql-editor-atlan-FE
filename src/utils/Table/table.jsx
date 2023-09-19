@@ -1,13 +1,24 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 
-const columnDescription = {
+const columnDescriptions = {
 	'customerID': 'ID of the Customer',
-	'companyName': 'First Name of the Contact',
-	'last_name': 'Last Name of the Contact',
-	'gender': 'Gender of the Contact',
+	'orderID': 'ID of the Order',
+	'productID': 'ID of the Product',
+	'unitPrice': 'Unit Price of the Product',
+	'quantity': 'Quantity of the Product',
+	'discount': 'Discount on the Product',
+	'companyName': 'Name of the Company',
+	'contactName': 'First Name of the Customer',
+	'contactTitle': 'Last Name of the Customer',
 	'email': 'Email of the Contact',
-	'ip_address': 'IP address of the Contact',
+	'address': 'Address of the Customer',
+	'city': 'City of the Customer',
+	'region': 'Region of Customer',
+	'postalCode': 'Postal Code of Customer',
+	'country':'Country of Customer',
+	'phone':'Phone No. of Customer',
+	'fax':'Fax No. of Customer',
 };
 
 const getTableRowsFromData = (arr) => {
@@ -50,7 +61,7 @@ const getTableColumnsWithDescription = (arr) => {
 		return (
 			<tr key={i}>
 				<td >{i}</td>
-				<td>{columnDescription[i]}</td>
+				<td>{columnDescriptions[i]}</td>
 			</tr>
 		);
 	});
