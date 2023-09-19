@@ -2,7 +2,6 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://raw.githubusercontent.com/graphql-compose/graphql-compose-examples/master/examples/northwind/data/csv",
   "jest": {
     "transformIgnorePatterns": [
       "node_modules/(?!(axios)/)"
