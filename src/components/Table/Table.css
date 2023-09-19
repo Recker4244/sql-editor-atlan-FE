@@ -1,22 +1,48 @@
-
-.query-table{
-    width: 100%;
-}
-.query-table-wrapper
+@media(max-width:768px)
 {
-    overflow-y: auto;
+    .query-table{
+        width: 100%;
+    }
+    .query-table-wrapper
+    {
+        overflow-y: auto;
+    }
+    .query-table > thead > tr>  td
+     {
+        padding: 10px;
+        font-weight: bold;
+        color: white;
+        background-color: var(--primary-color);
+    }
+    .query-table >tr>  td
+     {
+        text-overflow: ellipsis;
+        padding: 1%;
+        border-left: solid 1px #ccc;
+        border-bottom: solid 1px #ccc;
+    }
 }
-.query-table > thead > tr>  td
- {
-    padding: 1%;
-    font-weight: bold;
-    color: white;
-    background-color: var(--primary-color);
-}
-.query-table >tr>  td
- {
-    text-overflow: ellipsis;
-    padding: 1%;
-    border-left: solid 1px #ccc;
-    border-bottom: solid 1px #ccc;
+@media(min-width:768px)
+{
+    .query-table{
+        width: 100%;
+    }
+    .query-table-wrapper
+    {
+        overflow-y: auto;
+    }
+    .query-table > thead > tr>  td
+     {
+        padding: 10px;
+        font-weight: bold;
+        color: white;
+        background-color: var(--primary-color);
+    }
+    .query-table >tr>  td
+     {
+        text-overflow: ellipsis;
+        padding: 1%;
+        border-left: solid 1px #ccc;
+        border-bottom: solid 1px #ccc;
+    }
 }
