@@ -21,10 +21,11 @@
     }
     .limiter{
         display: flex;
+        margin-left: 10px;
         flex-direction: row;
     }
     .limiter > p{
-        font-size: 0.9rem;
+        font-size: medium;
     }
     .placeholder-text{
         height: 100%;
@@ -84,15 +85,19 @@
     .information{
         display: flex;
         flex-direction: row;
-        width: 35%;
         justify-content: space-between;
     }
     .limiter{
         display: flex;
+        margin-left: 10px;
         flex-direction: row;
     }
     .limiter > p{
-        font-size: 0.9rem;
+        font-size: medium;
+        vertical-align: middle;
+    }
+    .limiter > input{
+        height: 90%;
     }
     .placeholder-text{
         height: 100%;

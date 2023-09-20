@@ -11,7 +11,7 @@ import NavBar from '../../components/NavBar';
 const EditorPage = () => {
 	const [query, setQuery] = useState('SELECT * FROM Customers;');
 	const [queryHistory, setQueryHistory] = useState({
-		saved: ['SELECT * FROM Customers;', 'SELECT * FROM Order_Details;'],
+		saved: ['SELECT * FROM Customers;','SELECT * FROM Orders;', 'SELECT * FROM Order_Details;'],
 		history: [],
 		outputData: [],
 	});

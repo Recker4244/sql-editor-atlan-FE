@@ -17,7 +17,7 @@
     .query-table >tr>  td
      {
         text-overflow: ellipsis;
-        padding: 1%;
+        padding: 10px;
         border-left: solid 1px #ccc;
         border-bottom: solid 1px #ccc;
     }
@@ -40,8 +40,8 @@
     }
     .query-table >tr>  td
      {
+        padding: 10px;
         text-overflow: ellipsis;
-        padding: 1%;
         border-left: solid 1px #ccc;
         border-bottom: solid 1px #ccc;
     }

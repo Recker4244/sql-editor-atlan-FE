@@ -14,10 +14,6 @@ const TableSchema=(props)=>{
 					</tr>
 				</thead>
 				{getTableColumnsWithDescription(props.data)}
-				{/* {getTableColumns(props.data).map((i)=>{
-					<td>{columnDescription[i]}</td>;
-				})
-				} */}
 				
 			</table>
 		</div>

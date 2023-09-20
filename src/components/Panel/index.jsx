@@ -22,6 +22,13 @@ const EditorPanel = () => {
 				outputData: data,
 			}));
 		}
+		else if (query === 'SELECT * FROM Orders;') {
+			const data = await fetchData('orders');
+			setQueryHistory((prev) => ({
+				...prev,
+				outputData: data,
+			}));
+		}
 		else if (query === 'SELECT * FROM Order_Details;') {
 			const data = await fetchData('order_details');
 			setQueryHistory((prev) => ({
